@@ -1,0 +1,12 @@
+Bootstrap: docker
+From: pytorch/pytorch:1.9.1-cuda11.1-cudnn8-runtime
+
+%runscript
+
+    exec /usr/local/bin/python "$@"
+    
+%post
+
+    apt-get update
+    apt-get install -y vim nano
+    pip3 install numpy, pandas, matplotlib, seaborn, scipy
