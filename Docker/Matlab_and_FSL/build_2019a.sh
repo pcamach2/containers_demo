@@ -15,4 +15,3 @@ cd ./matlab-dockerfile
 docker build -f Dockerfile.R2019a -t matlab:r2019a -t localhost:5000/matlab:r2019a --build-arg MATLAB_RELEASE=R2019a .
 cd ../
 docker push localhost:5000/matlab:r2019b
-sudo SINGULARITY_NOHTTPS=1 singularity build matlab-R2019a.sif docker://localhost:5000/matlab:r2019a
