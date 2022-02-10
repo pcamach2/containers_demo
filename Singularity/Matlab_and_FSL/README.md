@@ -13,7 +13,7 @@ docker build -t matlabfsl:r2021bv6.0.4 -t localhost:5000/matlabfsl:r2021bv6.0.4 
 # if you need to convert only – use docker tag image:tag localhost:5000/image:tag
 docker push localhost:5000/matlabfsl:r2021bv6.0.4 .
 cd ../
-sudo SINGULARITY_NOHTTPS=1 singularity build matlabfsl-r2021bv6.0.4.sif docker://localhost:5000/matlabfsl:r2021bv6.0.4
+SINGULARITY_NOHTTPS=1 singularity build matlabfsl-r2021bv6.0.4.sif docker://localhost:5000/matlabfsl:r2021bv6.0.4
 ```
 
 !Both of these software suites require a license!
