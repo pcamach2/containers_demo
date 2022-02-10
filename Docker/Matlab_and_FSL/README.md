@@ -12,3 +12,5 @@ Docker command:
 ```
 docker run --rm -it -v /path/to/license.txt:/opt/fsl/license.txt -v /path/to/data:/datain matlabfsl:r2021bv6.0.4
 ```
+
+Note that installing via the fslinstaller.py script can stick at 0% for Stage 2 for a long time (hours on some machines). This is not a fatal error, so just let it be.
